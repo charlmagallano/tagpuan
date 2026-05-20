@@ -1,23 +1,45 @@
 # Tagpuan Theatre Company
 
-A simple nonprofit theatre website for **Tagpuan** — showcasing Filipino and Filipino American stories in New York City.
+Class website for a mock nonprofit theatre company in NYC. Single-page site built with HTML, CSS, and a little JavaScript.
 
-## View locally
+## What's on the site
 
-Open `index.html` in a browser, or run a local server:
+- Hero with cast photo
+- Now Playing (*On This Side of the World*)
+- About, budget chart, leadership photos
+- Support / donate section
+
+Content comes from the Tagpuan Theatre Company organizational plan (PDF).
+
+## Run it locally
+
+From this folder:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then visit [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
-## Deploy to GitHub Pages
+You can also open `index.html` directly in a browser, but a local server is better for fonts and images.
 
-1. Push this repo to `https://github.com/charlmagallano/tagpuan.git`
-2. On GitHub: **Settings → Pages → Source**: deploy from `main` branch, `/ (root)`
-3. Your site will be live at `https://charlmagallano.github.io/tagpuan/`
+If port 8080 is busy, use another port (e.g. `8081`) and change the URL to match.
 
-## Project context
+## GitHub Pages
 
-Mock theatre company site for an infographic class. Content sourced from the Tagpuan Theatre Company organizational plan.
+Repo: [github.com/charlmagallano/tagpuan](https://github.com/charlmagallano/tagpuan)
+
+Live site: [charlmagallano.github.io/tagpuan](https://charlmagallano.github.io/tagpuan/)
+
+Pages is set to deploy from the `main` branch, root folder.
+
+## Files
+
+| File / folder | Purpose |
+|---------------|---------|
+| `index.html` | Page structure |
+| `styles.css` | Layout and colors |
+| `script.js` | Mobile menu |
+| `Tagpuan.svg`, `actors.png`, `OTSOTW.png` | Logo and images |
+| `Cubao/` | Display font |
+| `images/team/` | Leadership headshots |

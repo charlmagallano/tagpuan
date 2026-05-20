@@ -1,4 +1,3 @@
-/* Tagpuan — Atlantic-simple layout, poster + infographic palette */
 @font-face {
   font-family: "Cubao";
   src: url("Cubao/CubaoFree2-Regular.ttf") format("truetype");
@@ -65,7 +64,6 @@ section[id] {
   scroll-margin-top: var(--header-offset);
 }
 
-/* Type */
 .block-title,
 h1,
 h2,
@@ -84,7 +82,6 @@ h3,
   margin: 0 0 1.5rem;
 }
 
-/* Header — overlays hero image */
 .site-header {
   position: absolute;
   top: 0;
@@ -175,7 +172,6 @@ h3,
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.65rem 1.4rem;
@@ -194,7 +190,6 @@ h3,
   color: var(--cream);
 }
 
-/* Hero — image with nav + welcome text on top */
 .hero {
   position: relative;
   min-height: min(88vh, 720px);
@@ -247,7 +242,6 @@ h3,
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Now playing — poster + info, Atlantic show row */
 .now-playing {
   padding: var(--section-y) 0;
   background: #fff;
@@ -305,7 +299,6 @@ h3,
   margin-bottom: 1.5rem;
 }
 
-/* About */
 .about {
   padding: var(--section-y) 0;
   background: var(--cream);
@@ -359,7 +352,6 @@ h3,
   }
 }
 
-/* Budget */
 .budget {
   padding: var(--section-y) 0;
   background: var(--charcoal);
@@ -411,6 +403,24 @@ h3,
   width: 100%;
 }
 
+.bar-track {
+  --bar-max-h: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 9rem;
+  height: var(--bar-max-h);
+}
+
+.bar-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
 .bar-value {
   font-family: var(--body);
   font-size: 0.75rem;
@@ -422,19 +432,10 @@ h3,
   color: rgba(255, 255, 255, 0.95);
 }
 
-.bar-track {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  max-width: 9rem;
-  height: 200px;
-}
-
 .bar-fill {
   display: block;
   width: 100%;
-  height: calc(var(--scale, 0) * 100%);
+  height: calc(var(--scale, 0) * var(--bar-max-h));
   background: var(--gold-chart);
 }
 
@@ -458,7 +459,6 @@ h3,
   text-wrap: balance;
 }
 
-/* People — simple photo grid */
 .people {
   padding: var(--section-y) 0;
   background: #fff;
@@ -508,7 +508,6 @@ h3,
   color: var(--muted);
 }
 
-/* Support CTA */
 .cta-band {
   padding: var(--section-y) 0;
   background: var(--gold);
@@ -551,7 +550,6 @@ h3,
   color: var(--navy-deep);
 }
 
-/* Footer */
 .site-footer {
   padding: 2.5rem 0;
   background: var(--ink);
@@ -612,7 +610,6 @@ body.nav-open {
   overflow: hidden;
 }
 
-/* Tablet / mobile layout */
 @media (max-width: 768px) {
   .show-card {
     grid-template-columns: 1fr;
