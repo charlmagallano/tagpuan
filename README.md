@@ -37,7 +37,8 @@ Pages is set to deploy from the `main` branch, root folder.
 
 | File / folder | Purpose |
 |---------------|---------|
-| `index.html` | Page structure |
+| `index.html` | Main page |
+| `budget.html` | Budget & impact infographic (linked from main page) |
 | `styles.css` | Layout and colors |
 | `script.js` | Mobile menu |
 | `Tagpuan.png`, `actors.png`, `OTSOTW.png` | Logo and images |

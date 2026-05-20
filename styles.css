@@ -796,3 +796,385 @@ body.nav-open {
     grid-row: 3;
   }
 }
+
+.budget-more {
+  margin: 0 0 2rem;
+}
+
+.btn-read-more {
+  background: transparent;
+  color: #fff;
+  border: 2px solid var(--gold);
+}
+
+.btn-read-more:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.info-page .site-header {
+  display: none;
+}
+
+.info-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--navy-deep);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.info-header .logo img {
+  height: 28px;
+  mix-blend-mode: screen;
+}
+
+.info-back {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.info-back:hover {
+  color: #fff;
+}
+
+.info-main {
+  padding-bottom: 0;
+}
+
+.info-kicker {
+  margin: 2.5rem 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+.info-title {
+  font-family: var(--display);
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  color: var(--navy);
+  margin: 0 0 1rem;
+  line-height: 0.95;
+}
+
+.info-lead {
+  margin: 0 0 2rem;
+  max-width: 52ch;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.info-section {
+  padding: var(--section-y) 0;
+}
+
+.info-section--dark {
+  background: var(--charcoal);
+  color: #fff;
+}
+
+.info-section--cream {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+}
+
+.info-heading {
+  font-family: var(--display);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  color: #fff;
+  margin: 0 0 1.5rem;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.info-caption,
+.info-note {
+  margin: 1.5rem 0 0;
+  max-width: 48ch;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.info-section:not(.info-section--dark) .info-note {
+  color: var(--muted);
+}
+
+.mission-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.mission-cards li {
+  padding: 1.25rem 1.35rem;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.mission-cards h3 {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  color: var(--navy);
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.mission-cards p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.mission-cards__tagpuan {
+  border-color: var(--navy);
+  box-shadow: inset 0 0 0 1px var(--navy);
+}
+
+.math-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.math-step {
+  padding: 1.25rem;
+  background: var(--cream);
+  border: 1px solid var(--line);
+}
+
+.math-step--highlight {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+
+.math-step--highlight .math-label,
+.math-step--highlight .math-detail {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.math-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.math-value {
+  display: block;
+  margin: 0.35rem 0 0.2rem;
+  font-family: var(--display);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  color: var(--navy);
+  line-height: 1;
+}
+
+.math-step--highlight .math-value {
+  color: var(--gold);
+}
+
+.math-detail {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.income-split {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.income-copy p {
+  margin: 0 0 1.25rem;
+  max-width: 42ch;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.income-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.swatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+.swatch--earned {
+  background: var(--gold-chart);
+}
+
+.swatch--contrib {
+  background: var(--sky);
+}
+
+.pie-wrap {
+  margin: 0;
+  text-align: center;
+}
+
+.pie-chart {
+  width: min(200px, 40vw);
+  height: min(200px, 40vw);
+  margin-inline: auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--gold-chart) 0 32%,
+    var(--sky) 32% 100%
+  );
+}
+
+.pie-caption {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.stacked-budget {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.stacked-budget li {
+  display: grid;
+  grid-template-columns: 10rem 1fr 3.5rem;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.stacked-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.stacked-bar {
+  display: block;
+  height: 1.25rem;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.stacked-fill {
+  display: block;
+  height: 100%;
+  width: calc(var(--pct, 0) * 1%);
+  background: var(--gold-chart);
+}
+
+.stacked-amt {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: right;
+  color: var(--navy);
+}
+
+.impact-grid {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.impact-grid li {
+  padding: 1.25rem;
+  text-align: center;
+  background: var(--cream);
+  border: 1px solid var(--line);
+}
+
+.impact-num {
+  display: block;
+  font-family: var(--display);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  color: var(--navy);
+  line-height: 1;
+}
+
+.impact-label {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.info-cta-wrap {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .mission-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .math-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .income-split {
+    grid-template-columns: 1fr;
+  }
+
+  .pie-wrap {
+    order: -1;
+  }
+
+  .stacked-budget li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .stacked-amt {
+    text-align: left;
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
