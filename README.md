@@ -40,6 +40,6 @@ Pages is set to deploy from the `main` branch, root folder.
 | `index.html` | Page structure |
 | `styles.css` | Layout and colors |
 | `script.js` | Mobile menu |
-| `Tagpuan.svg`, `actors.png`, `OTSOTW.png` | Logo and images |
+| `Tagpuan.png`, `actors.png`, `OTSOTW.png` | Logo and images |
 | `Cubao/` | Display font |
 | `images/team/` | Leadership headshots |
