@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tagpuan Theatre Company — Filipino and Filipino American stories on New York stages." />
+  <title>Tagpuan Theatre Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <header class="site-header">
+        <nav class="nav" aria-label="Main">
+          <a class="logo" href="#">
+            <img src="Tagpuan.svg" alt="Tagpuan" width="130" height="27" />
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul id="nav-menu" class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#show">Now Playing</a></li>
+            <li><a href="#budget">Budget</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="#support" class="btn-nav">Donate</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img
+        class="hero-img"
+        src="actors.png"
+        alt="Cast of On This Side of the World on stage"
+        width="1600"
+        height="900"
+      />
+      <div class="hero-content wrap">
+        <h1 id="hero-heading">Welcome to Tagpuan</h1>
+        <p class="hero-lead">
+          A nonprofit theatre for Filipino and Filipino American stories in New York City.
+        </p>
+      </div>
+    </section>
+
+    <section id="show" class="now-playing">
+      <div class="wrap">
+        <article class="show-card">
+          <a class="show-poster-link" href="#support">
+            <img
+              src="OTSOTW.png"
+              alt="On This Side of the World poster"
+              width="1651"
+              height="2551"
+            />
+          </a>
+          <div class="show-info">
+            <p class="show-kicker">Now Playing</p>
+            <h2>On This Side of the World</h2>
+            <p class="show-meta">By Paulo K. Tirol · Dir. Billy Bustamante</p>
+            <p class="show-blurb">
+              A flight from Manila to New York opens into stories of Filipino immigrants: parents, cousins,
+              and the songs that follow you across oceans. Six actors and a live band.
+            </p>
+            <p class="show-dates">Sep 3 – Oct 11, 2026 · Pershing Square Signature Center</p>
+            <a class="btn" href="#support">Tickets</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="wrap about-wrap">
+        <h2 class="block-title">About</h2>
+        <p>
+          Tagpuan means meeting place. We put Filipino music, language, family, and history onstage
+          with Off-Broadway rigor and tickets more people can afford.
+        </p>
+        <p>
+          We rent venues around the city. No owned building. Student tickets, community nights, and galas
+          keep the seats full.
+        </p>
+        <p class="about-note">
+          Backed by a Founding Artist Circle including Lea Salonga, Olivia Rodrigo, H.E.R., and Eva Noblezada.
+        </p>
+      </div>
+    </section>
+
+    <section id="budget" class="budget">
+      <div class="wrap">
+        <h2 class="budget-heading">Budget</h2>
+        <p class="budget-note">
+          Tagpuan’s annual operating budget is $3.6M. The chart below compares that figure to peer nonprofit theatres in New York.
+        </p>
+        <figure class="budget-chart" aria-label="Annual operating budgets: National Asian American Theatre Company, Ma-Yi Theatre Company, Tagpuan Theatre Company, Signature Theatre, Atlantic Theater Company">
+          <div class="bars" role="list">
+            <div class="bar" role="listitem">
+              <div class="bar-body">
+                <div class="bar-column">
+                  <span class="bar-value">705K</span>
+                  <span class="bar-fill" style="height: 9px"></span>
+                </div>
+              </div>
+              <span class="bar-label">National Asian American Theatre Company</span>
+            </div>
+            <div class="bar" role="listitem">
+              <div class="bar-body">
+                <div class="bar-column">
+                  <span class="bar-value">1.05M</span>
+                  <span class="bar-fill" style="height: 13px"></span>
+                </div>
+              </div>
+              <span class="bar-label">Ma-Yi Theatre Company</span>
+            </div>
+            <div class="bar bar--tagpuan" role="listitem">
+              <div class="bar-body">
+                <div class="bar-column">
+                  <span class="bar-value">3.6M</span>
+                  <span class="bar-fill" style="height: 46px"></span>
+                </div>
+              </div>
+              <span class="bar-label">Tagpuan Theatre Company</span>
+            </div>
+            <div class="bar" role="listitem">
+              <div class="bar-body">
+                <div class="bar-column">
+                  <span class="bar-value">12.41M</span>
+                  <span class="bar-fill" style="height: 159px"></span>
+                </div>
+              </div>
+              <span class="bar-label">Signature Theatre</span>
+            </div>
+            <div class="bar" role="listitem">
+              <div class="bar-body">
+                <div class="bar-column">
+                  <span class="bar-value">15.64M</span>
+                  <span class="bar-fill" style="height: 200px"></span>
+                </div>
+              </div>
+              <span class="bar-label">Atlantic Theater Company</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+
+    <section id="people" class="people">
+      <div class="wrap">
+        <h2 class="block-title">Leadership</h2>
+        <ul class="people-grid">
+          <li>
+            <img src="images/team/billy-bustamante-web.jpeg" alt="Billy Bustamante" width="120" height="120" />
+            <span class="name">Billy Bustamante</span>
+            <span class="role">Artistic Director</span>
+          </li>
+          <li>
+            <img src="images/team/rob-laqui-web.jpeg" alt="Rob Laqui" width="120" height="120" />
+            <span class="name">Rob Laqui</span>
+            <span class="role">Managing Producer</span>
+          </li>
+          <li>
+            <img src="images/team/charl-magallano-web.jpeg" alt="Charl Magallano" width="120" height="120" />
+            <span class="name">Charl Magallano</span>
+            <span class="role">Marketing &amp; Audience</span>
+          </li>
+          <li>
+            <img src="images/team/sheryl-polancos-web.jpeg" alt="Sheryl Polancos" width="120" height="120" />
+            <span class="name">Sheryl Polancos</span>
+            <span class="role">Production</span>
+          </li>
+          <li>
+            <img src="images/team/don-michael-mendoza-web.jpeg" alt="Don Michael H. Mendoza" width="120" height="120" />
+            <span class="name">Don Michael H. Mendoza</span>
+            <span class="role">Development</span>
+          </li>
+          <li>
+            <img src="images/team/gail-quintos-web.jpeg" alt="Gail Quintos" width="120" height="120" />
+            <span class="name">Gail Quintos</span>
+            <span class="role">Casting</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="support" class="cta-band">
+      <div class="wrap cta-wrap">
+        <div class="cta-copy">
+          <h2>Support Tagpuan</h2>
+          <p>Your gift helps us pay artists, keep ticket prices down, and bring Filipino stories to New York stages.</p>
+        </div>
+        <a class="btn btn-cta" href="mailto:hello@tagpuantheatre.org">Donate</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <img src="Tagpuan.svg" alt="" class="footer-logo" width="130" height="27" />
+      <nav aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#show">Now Playing</a>
+        <a href="#budget">Budget</a>
+        <a href="#people">People</a>
+        <a href="#support">Donate</a>
+      </nav>
+      <p class="copy">&copy; 2026 Tagpuan Theatre Company · New York, NY</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
